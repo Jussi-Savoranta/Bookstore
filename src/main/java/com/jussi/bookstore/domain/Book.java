@@ -12,7 +12,7 @@ public class Book {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	long id;
 	public String title, author, bookYear, isbn;
-	public int price;
+	public double price;
 	
 	public Book() {}
 	
@@ -48,10 +48,10 @@ public class Book {
 	public void setIsbn(String isbn) {
 		this.isbn = isbn;
 	}
-	public int getPrice() {
+	public double getPrice() {
 		return price;
 	}
-	public void setPrice(int price) {
+	public void setPrice(double price) {
 		this.price = price;
 	}
 	

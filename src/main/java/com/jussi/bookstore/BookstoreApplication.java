@@ -24,8 +24,8 @@ public class BookstoreApplication {
 	public CommandLineRunner bookDemo(BookRepository repository) {
 		return (args) -> {
 			log.info("save couple of books for testing");
-			repository.save(new Book("Firm", "John Grisham", "1999", "345dfgh", 19));
-			repository.save(new Book("Harry Potter and the Philosopher's Stone", " J. K. Rowling", "1997 ", "5678dfghjk", 29));
+			repository.save(new Book("Firm", "John Grisham", "1997", "0-385-41634-2", 19));
+			repository.save(new Book("Harry Potter and the Philosopher's Stone", " J. K. Rowling", "1997 ", "0-7475-3269-9", 29));
 		
 			log.info("fetch all books");
 			for(Book book : repository.findAll()) {
